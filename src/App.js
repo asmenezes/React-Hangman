@@ -1,24 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Main from './components/main'
 function App() {
+  let list = [
+    "Python",
+    "Good",
+   "Bad",
+  "React",
+  'reinforce',
+  'stumble',
+  'hypnothize',
+  'deliver',
+  'reputation',
+  'recovery',
+  'opposition',
+  'lounge',
+  'tempt',
+  'knife',
+  'fate',
+  'modest',
+  'table',
+  'sample',
+  'dream',
+  'on',
+  'registration',
+  'plant',
+  'restaurant',
+  'assault']
+  let choice = list[Math.floor(Math.random() * list.length)];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<div>
+  <Main choice = {choice}/>
+
+ </div>
+                    
+  
   );
 }
 

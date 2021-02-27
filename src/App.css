@@ -1,38 +1,64 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  background-color: #d7e7f4;
+}
+.heart{
+  color: #ff1a1a;
+  font-size: 5em;
+  width: min-content;
+  display: block;
+  
+}
+.letter,.guess{
+  font-size: 5em;
+  display: inline;
+  margin: .2em;
+  
+}
+.guess{
+  font-size: 3em;;
+}
+#title{
+  margin-top: 1em;
+  text-align: center; 
+
+}
+#letterDiv{
+  width: min-content;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+#GuessesDiv{
+  margin: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(5em,1fr));
+}
+#guessLabel{
+  font-size: 2em;
+  background-color: transparent;
+}
+#letterInput{
+  font-size: 2em;
+  width: 2.5em;
+  background-color: whitesmoke;
+}
+#guessForm{
+  display: block;
+  float: right;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 1em;
+  right: 1em;
+  background-color: transparent;
+}
+#end{
+  padding: 2em;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#result{
+  font-size: larger;
+  text-align: center;
+  line-height: 2;
 }
